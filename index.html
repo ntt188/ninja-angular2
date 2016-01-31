@@ -1,23 +1,27 @@
 <html>
 
 <head>
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_models/systemjs/dist/system.js"></script>
-    <script>
-        System.config({
-            defaultJSExtensions:true,
-            map: {
-                'angular2':'node_modules/angular2',
-                'rxjs':'node_modules/rxjs'    
-            }
-        });
-    </script>
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script>
+  System.config({
+    // we want to import modules without writing .js at the end
+    defaultJSExtensions: true,
+    // the app will need the following dependencies
+    map: {
+      'angular2': 'node_modules/angular2',
+      'rxjs': 'node_modules/rxjs'
+    }
+  });
+  // and to finish, let's boot the app!
+  System.import('built/bootstrap');
+  </script>
 </head>
 
 <body>
-    <ponyracer-app>
-        You will see me while Angular starts the app!
-    </ponyracer-app>
+  <ponyracer-app>
+    You will see me while Angular starts the app!
+  </ponyracer-app>
 </body>
 
-</html> 
+</html>

@@ -14,7 +14,7 @@ var PonyRacerApp = (function () {
     PonyRacerApp = __decorate([
         core_1.Component({
             selector: 'ponyracer-app',
-            template: '<h1>PonyRace</h1>'
+            template: '<h1>PonyRacer</h1>'
         }), 
         __metadata('design:paramtypes', [])
     ], PonyRacerApp);
