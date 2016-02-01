@@ -10,11 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var RacesCmp = (function () {
     function RacesCmp() {
+        this.races = [{ name: 'London' }, { name: 'Lyon' }];
     }
     RacesCmp = __decorate([
         core_1.Component({
             selector: 'races-cmp',
-            template: "<h2>Races</h2>"
+            template: "<div *ngIf=\"races.length > 0;\">\n  <h2>Races</h2>\n  <ul>\n    <li *ngFor=\"#race of races; #i=index\">{{i + 1}} - {{race.name}}</li>\n  </ul>\n  </div>"
         }), 
         __metadata('design:paramtypes', [])
     ], RacesCmp);

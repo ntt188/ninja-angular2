@@ -8,22 +8,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var races_cmp_1 = require('./races_cmp');
-var ponies_cmp_1 = require('./ponies_cmp');
-var PonyRacerApp = (function () {
-    function PonyRacerApp() {
-        this.numberOfUsers = 146;
-        this.user1 = { name: 'home' };
+var PoniesCmp = (function () {
+    function PoniesCmp() {
     }
-    PonyRacerApp = __decorate([
+    PoniesCmp = __decorate([
         core_1.Component({
-            selector: 'ponyracer-app',
-            template: "\n    <h1>PonyRacer</h1>\n    <h2>{{numberOfUsers}} users</h2>\n    <h2>Welcome {{user1.name}}</h2>\n    <h2>Welcome {{user2?.name}}</h2>\n    <races-cmp></races-cmp>\n    <ponies-cmp></ponies-cmp>\n  ",
-            directives: [races_cmp_1.RacesCmp, ponies_cmp_1.PoniesCmp]
+            selector: 'ponies-cmp',
+            template: ""
         }), 
         __metadata('design:paramtypes', [])
-    ], PonyRacerApp);
-    return PonyRacerApp;
+    ], PoniesCmp);
+    return PoniesCmp;
 })();
-exports.PonyRacerApp = PonyRacerApp;
-//# sourceMappingURL=ponyracer_app.js.map
+exports.PoniesCmp = PoniesCmp;
+//# sourceMappingURL=PoniesCmp.js.map
